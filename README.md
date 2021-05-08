@@ -104,6 +104,12 @@
 ![15](https://user-images.githubusercontent.com/80791532/117535949-5f158a80-b033-11eb-9668-edbf3ac0c430.PNG)
 
 ## 13. checkout
-- 현재 문서를 독립적으로 작업할 수 있는 branch를 새로 만들었지만 git은 아직 master 브랜치를 가리키고 있다.
-- 이 상태에서 git이 test 브랜치를 가리키는 상태로 만들고 싶다. 
+- 현재 문서를 독립적으로 작업할 수 있는 branch를 새로 만들었지만 git은 아직 main 브랜치를 가리키고 있다.
+- 이 상태에서 test branch로 이동하여 git이 test 브랜치를 가리키는 상태로 바꾸고 싶다. 
+- 이를 위해 'checkout' 명령어를 사용하였다.
+- 따라서 'branch'명령어를 사용하여 새로운 브랜치를 만들었지만 'branch'명령어는 브랜치를 만들기만 하고 브랜치를 옮기지 않으므로 'checkout'명령어는 기본 main브랜치에서 원하는 브랜치로 이동하여 Git이 해당 브랜치를 가리키게 하는 역할을 하는 것으로 정리할 수 있다. 그리고 checkout 명령어의 자주 사용할 것 같은 또 다른 옵션으로는 checkout -b 가 있다. 이 옵션은 브랜치의 생성과 체크아웃을 한꺼번에 할 수 있게 해 준다.
+
+![16](https://user-images.githubusercontent.com/80791532/117537316-fdf1b500-b03a-11eb-9f32-b149a5c4c065.PNG)
+
+![17](https://user-images.githubusercontent.com/80791532/117537321-05b15980-b03b-11eb-8114-059788cfbf6b.PNG)
 
