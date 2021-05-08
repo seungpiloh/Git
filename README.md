@@ -1,5 +1,7 @@
-# Git
-## 1. config
+# Git Practice
+## Github repository URL
+ https://github.com/seungpiloh/Git.git
+## config
 - 처음 git을 설치하면 아무 설정도 되어있지 않을 것이다.
 - 그러나 git은 커밋 할 때마다 사용자 이름과 이메일 주소를 사용한다. 따라서 git의 최초설정을 해주는 명령어가 필요하다.
 - 이를 위해 git 명령어 ‘git config --global' 을 사용하였다.
@@ -11,7 +13,7 @@
 
 ![3](https://user-images.githubusercontent.com/80791532/117534223-72245c80-b02b-11eb-8787-e03f5eeb863d.PNG)
 
-## 2. init
+## init
 - git을 사용하기 위한 최초 설정은 하였지만 아직 아무것도 할 수 없는 상태이다.
 - 따라서 git이 버전관리를 해주는 상태로 만들어주는 명령어가 필요하다.
 - 이를 위해 git 명령어 'init'을 사용하였다.
@@ -120,4 +122,19 @@
 - 따라서 'merge'명령어는 다른 브랜치를 만들어 선택한 부분의 문제를 해결하고 다시 원래의 master 브랜치로 옮길 때 사용하는 것으로 정리할 수 있다. 이때 이전 다른 브랜치의 커밋이 master 커밋에 기반한 것이라면 merge과정 없이 그저 최신 커밋으로 이동한다. 이는 “Fast forward" 방식이라고 부른다. 그러나 master 브랜치와 별개로 진행되는 다른 브랜치라면 Git은 'Fast-forward’로 Merge 하지 않고 각 브랜치가 가리키는 커밋들과 공통 조상 하나를 사용하여 merge한다. 그리고 checkout 명령어의 자주 사용할 것 같은 또 다른 옵션으로는 merge --no-ff 와 merge --ff-only가 있다. merge --no-ff는  현재 브랜치와 병합 대상의 관계가 Fast-Forward이던 아니던 무조건 Merge 커밋과 같이 병합되는 옵션이고  merge --ff-only 는  현재 브랜치와 병합 대상의 관계가 Fast-Forward인 경우에만 병합을 진행하는 옵션이다.
 
 ![18](https://user-images.githubusercontent.com/80791532/117537641-4ca04e80-b03d-11eb-83ca-6e2da8b30b0c.PNG)
+
+
+
+
+
+| 명령어 | add | branch | checkout | clone | commit | [config](#config) | [init](#init) | log |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 사용여부 | O | O | O | O | O | O | O | O |
+
+| 명령어 | merge | pull | push | rebase | remote | reset --hard | status | tag |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 사용여부 | O | O | O | O | O | O | O | O |
+
+*링크 : 명령어를 클릭하면 해당 명령어 설명 부분으로 넘어갑니다.
+
 
