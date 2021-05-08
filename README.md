@@ -105,11 +105,19 @@
 
 ## 13. checkout
 - 현재 문서를 독립적으로 작업할 수 있는 branch를 새로 만들었지만 git은 아직 main 브랜치를 가리키고 있다.
-- 이 상태에서 test branch로 이동하여 git이 test 브랜치를 가리키는 상태로 바꾸고 싶다. 
+- 이 상태에서 test branch로 이동하여 git이 test 브랜치를 가리키는 상태로 바꾸고 test 브랜치에서 이미지를 테스트 하고 싶다. 
 - 이를 위해 'checkout' 명령어를 사용하였다.
 - 따라서 'branch'명령어를 사용하여 새로운 브랜치를 만들었지만 'branch'명령어는 브랜치를 만들기만 하고 브랜치를 옮기지 않으므로 'checkout'명령어는 기본 main브랜치에서 원하는 브랜치로 이동하여 Git이 해당 브랜치를 가리키게 하는 역할을 하는 것으로 정리할 수 있다. 그리고 checkout 명령어의 자주 사용할 것 같은 또 다른 옵션으로는 checkout -b 가 있다. 이 옵션은 브랜치의 생성과 체크아웃을 한꺼번에 할 수 있게 해 준다.
 
 ![16](https://user-images.githubusercontent.com/80791532/117537316-fdf1b500-b03a-11eb-9f32-b149a5c4c065.PNG)
 
 ![17](https://user-images.githubusercontent.com/80791532/117537321-05b15980-b03b-11eb-8114-059788cfbf6b.PNG)
+
+## 14. merge
+- 현재 문서는 독립적으로 작업할 수 있는 test 브랜치에서 테스트가 이루어지고 있다.
+- 이 상태에서 test가 성공적으로 완료되었으므로 다시 원래의 main 브랜치에 적용하고 싶다.
+- 이를 위해 'merge' 명령어를 사용하였다.
+- 따라서 'merge'명령어는 다른 브랜치를 만들어 선택한 부분의 문제를 해결하고 다시 원래의 master 브랜치로 옮길 때 사용하는 것으로 정리할 수 있다. 이때 이전 다른 브랜치의 커밋이 master 커밋에 기반한 것이라면 merge과정 없이 그저 최신 커밋으로 이동한다. 이는 “Fast forward" 방식이라고 부른다. 그러나 master 브랜치와 별개로 진행되는 다른 브랜치라면 Git은 'Fast-forward’로 Merge 하지 않고 각 브랜치가 가리키는 커밋들과 공통 조상 하나를 사용하여 merge한다. 그리고 checkout 명령어의 자주 사용할 것 같은 또 다른 옵션으로는 merge --no-ff 와 merge --ff-only가 있다. merge --no-ff는  현재 브랜치와 병합 대상의 관계가 Fast-Forward이던 아니던 무조건 Merge 커밋과 같이 병합되는 옵션이고  merge --ff-only 는  현재 브랜치와 병합 대상의 관계가 Fast-Forward인 경우에만 병합을 진행하는 옵션이다.
+
+![18](https://user-images.githubusercontent.com/80791532/117537641-4ca04e80-b03d-11eb-83ca-6e2da8b30b0c.PNG)
 
