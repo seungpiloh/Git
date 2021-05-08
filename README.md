@@ -1,6 +1,6 @@
-# Git Practice
-## Github repository URL
+# Github repository URL
  https://github.com/seungpiloh/Git.git
+# Git Practice
 ## config
 - 처음 git을 설치하면 아무 설정도 되어있지 않을 것이다.
 - 그러나 git은 커밋 할 때마다 사용자 이름과 이메일 주소를 사용한다. 따라서 git의 최초설정을 해주는 명령어가 필요하다.
