@@ -137,9 +137,9 @@
 - 이를 위해 'tag'명령어를 사용합니다.
 - 따라서, tag명령어는 현재 commit뿐만 아니라 과거의 commit을 넘나들며 이동할 수 있는 일종의 책갈피를 만들 때 사용하는 것으로 정리할 수 있다. 이때 tag는 수정이 불가능하며 읽기만 가능하다. 그리고 tag 명령어의 자주 사용할 것 같은 또 다른 옵션으로는 'tag -m' 이 있다. 이 옵션은 태그를 남길 때 메시지도 함께 남기도록 해준다.
 
-![21](https://user-images.githubusercontent.com/80791532/117542503-dce98e00-b053-11eb-9460-25fea0b3125d.PNG)
-
 ![22](https://user-images.githubusercontent.com/80791532/117542514-e3780580-b053-11eb-8e41-0e7e8f81c9ac.PNG)
+
+![21](https://user-images.githubusercontent.com/80791532/117542503-dce98e00-b053-11eb-9460-25fea0b3125d.PNG)
 
 ## 명령어/사용여부/링크
 
