@@ -21,7 +21,7 @@
 
 ![3](https://user-images.githubusercontent.com/80791532/117534266-954f0c00-b02b-11eb-9919-9ad04b5ff9ba.PNG)
 
-## 3. status
+## status
 - 현재 문서가 위치하고 있는 디렉터리는 git의 관리 하에 있다.
 -이 때 디렉터리 안의 파일이 수정되었는지 파일의 상태를 확인하고 싶다.
 - 이를 위해 git 명령어 ‘status’를 사용하였다.
@@ -29,7 +29,7 @@
 
 ![4](https://user-images.githubusercontent.com/80791532/117534293-adbf2680-b02b-11eb-8f68-fcb0fd70dc29.PNG)
 
-## 4. add
+## add
 - 현재 문서는 untracked 상태(git이 파일을 추적하지 않는 상태)이다. 
 - 이 상태에서 git이 파일을 추적하는 상태로 만들고 싶다.
 - 이를 위해 git 명령어 ‘add’중에서도 ‘git add .' (현재 디렉토리의 모든 변경 내용을 staging area로 넘김) 명령어를 사용했다.
@@ -37,7 +37,7 @@
 
 ![5](https://user-images.githubusercontent.com/80791532/117534317-cd564f00-b02b-11eb-8ab7-1f6bd4e4116e.PNG)
 
-## 5. commit
+## commit
 - 현재 문서는 tracked 상태이며 staging area에 저장되어 있다.
 - 이 상태에서 파일을 git저장소에 저장하고 싶다.
 - 이를 위해 git 명령어 ‘commit’ 중에서도 ‘git commit -m <커밋 메시지>’ 를 사용했다.(이때 커밋 메시지는 해당 작업이 무엇을 했는지를 잘 표현해야 한다)
@@ -45,7 +45,7 @@
 
 ![6](https://user-images.githubusercontent.com/80791532/117534330-e232e280-b02b-11eb-927b-116485e70d99.PNG)
 
-## 6. log
+## log
 - 현재 문서는 최초 커밋이 된 뒤에 문장의 수정이 이루어진 후 다시 한 번 커밋이 된 상태이다.
 - 이 상태에서 git 저장소의 히스토리를 보고 싶다.
 - 이를 위해 ‘log’ 명령어를 사용하였다.
@@ -53,7 +53,7 @@
 
 ![7](https://user-images.githubusercontent.com/80791532/117534350-f8d93980-b02b-11eb-96fe-a9c9f4a738f3.PNG)
 
-## 7. reset --hard
+## reset--hard
 - 현재 문서는 문맥이 맞지 않는 문장을 수정한 뒤 다시 한 번 커밋이 이루어진 상태이다.
 - 그러나 다시 보니 고치기 전 문장이 맞아서 고치기 전 상태로 만들고 이후의 커밋을 삭제하고 싶다.
 - 이를 위해 'reset --hard' 명령어를 사용하였다.
@@ -65,7 +65,7 @@
 
 ![10](https://user-images.githubusercontent.com/80791532/117534384-232af700-b02c-11eb-9b27-806f221cdf99.PNG)
 
-## 8. remote
+## remote
 - 현재 문서는 git에 의해 관리되고 있는 상태이다.
 - 이 상태에서 원격 저장소(github의 repository)를 생성하여 다른 사람들과 협업할 수 있는 환경을 만들고 싶다.
 - 이를 위해 'remote' 명령어를 사용하였다.
@@ -73,7 +73,7 @@
 
 ![11](https://user-images.githubusercontent.com/80791532/117534400-3938b780-b02c-11eb-9d42-f50f82b9749d.PNG)
 
-## 9. push
+## push
 - 현재 아직 문서를 공유하고 있는 상태가 아니다.
 - 이 상태에서 문서에 커밋된 내용들을 원격 저장소에 올려 다른 사람들과 협업하여 프로젝트를 진행하고 싶다.
 - 이를 위해 'push' 명령어를 사용하였다.
@@ -81,7 +81,7 @@
 
 ![12](https://user-images.githubusercontent.com/80791532/117534426-5cfbfd80-b02c-11eb-9875-9f34dcddec61.PNG)
 
-## 10. clone
+## clone
 - 컴퓨터로 하던 작업을 다른 컴퓨터로 옮겨와 작업을 이어가고 싶다.(가정)
 - 이 상태에서 원격 저장소에 저장되어 있는 프로젝트를 통째로 내려받고 싶다.
 - 이를 위해 'clone'명령어를 사용하였다.
@@ -89,7 +89,7 @@
 
 ![캡처](https://user-images.githubusercontent.com/80791532/117534638-4d30e900-b02d-11eb-995c-d0002bd21055.PNG)
 
-## 11. pull
+## pull
 - 현재 다른 팀원이 문서의 예제를 수정하여 커밋한 뒤 github에 업데이트 하였다.(가정)
 - 이 상태에서 팀원이 수정한 내용을 클라이언트로 내려받고 싶다.
 - 이를 위해 'pull'명령어를 사용하였다.
@@ -97,7 +97,7 @@
 
 ![14](https://user-images.githubusercontent.com/80791532/117534695-879a8600-b02d-11eb-95d7-5a270cf3603d.PNG)
 
-## 12. branch
+## branch
 - 현재 문서는 여러 팀원과 함께 협업하여 수정되고 있는 상태이다. 
 - 이 상태에서 새로운 이미지를 테스트 해보고 싶지만 협업중인 문서를 함부로 변경할 수는 없으므로 독립적으로 어떤 작업을 테스트 해 볼 수 있는 상태로 만들고 싶다.
 - 이를 위해 git 명령어 'branch'를 사용하였다.
@@ -105,7 +105,7 @@
 
 ![15](https://user-images.githubusercontent.com/80791532/117535949-5f158a80-b033-11eb-9668-edbf3ac0c430.PNG)
 
-## 13. checkout
+## checkout
 - 현재 문서를 독립적으로 작업할 수 있는 branch를 새로 만들었지만 git은 아직 main 브랜치를 가리키고 있다.
 - 이 상태에서 test branch로 이동하여 git이 test 브랜치를 가리키는 상태로 바꾸고 test 브랜치에서 이미지를 테스트 하고 싶다. 
 - 이를 위해 'checkout' 명령어를 사용하였다.
@@ -115,7 +115,7 @@
 
 ![17](https://user-images.githubusercontent.com/80791532/117537321-05b15980-b03b-11eb-8114-059788cfbf6b.PNG)
 
-## 14. merge
+## merge
 - 현재 문서는 독립적으로 작업할 수 있는 test 브랜치에서 테스트가 이루어지고 있다.
 - 이 상태에서 test가 성공적으로 완료되었으므로 다시 원래의 main 브랜치에 적용하고 싶다.
 - 이를 위해 'merge' 명령어를 사용하였다.
@@ -123,15 +123,18 @@
 
 ![18](https://user-images.githubusercontent.com/80791532/117537641-4ca04e80-b03d-11eb-83ca-6e2da8b30b0c.PNG)
 
+## rebase 
+
+## tag
 
 
+## 명령어/사용여부/링크
 
-
-| 명령어 | add | branch | checkout | clone | commit | [config](#config) | [init](#init) | log |
+| 명령어 | [add](#add) | [branch](#branch) | [checkout](#checkout) | [clone](#clone) | [commit](#commit) | [config](#config) | [init](#init) | [log](#log) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 사용여부 | O | O | O | O | O | O | O | O |
 
-| 명령어 | merge | pull | push | rebase | remote | reset --hard | status | tag |
+| 명령어 | [merge](#merge) | [pull](#pull) | [push](#push) | [rebase](#rebase) | [remote](#remote) | [reset--hard](#reset--hard) | [status](#status) | [tag](#tag) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 사용여부 | O | O | O | O | O | O | O | O |
 
