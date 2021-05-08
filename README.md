@@ -104,5 +104,6 @@
 ![15](https://user-images.githubusercontent.com/80791532/117535949-5f158a80-b033-11eb-9668-edbf3ac0c430.PNG)
 
 ## 13. checkout
-- 
+- 현재 문서를 독립적으로 작업할 수 있는 branch를 새로 만들었지만 git은 아직 master 브랜치를 가리키고 있다.
+- 이 상태에서 git이 test 브랜치를 가리키는 상태로 만들고 싶다. 
 
